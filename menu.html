@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<style>
+    /* MENU */
+
+.menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    background-image: linear-gradient(to right bottom, rgb(255, 81, 0), rgba(255,0,0,.5));
+}
+
+.menu-heading{
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.9);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+}
+
+.heading-secondary{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.menu-img{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("bacon-cheeseburger-pizza.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("burger.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("cheeseburg.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://www.tasteofthesouthmagazine.com/wp-content/uploads/2017/05/SouthernPlateFrenchFries679JB.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img5{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("drink.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img6{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("spicy\ chicken\ legs.jpg");
+    background-repeat: no-repeat;
+}
+.menu-img7{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("hawaiian\ pizza.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-img8{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("pepperoni\ pizza.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+.menu-p{
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: red;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'popons', sans-serif;
+    background-color: rgb(27,27,27);
+    overflow-x: hidden;
+}
+
+.header{
+    height: 90vh;
+    position: relative;
+}
+
+.navbar{
+    height: 110px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.heading-tertiary{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    
+}
+
+.navbar-item{
+    display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color: rgb(124, 119, 119)24, 119, 119);
+    padding: 3rem;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover{
+    background-color: green;
+    color: black;
+}
+
+.navbar-link-book:visited,
+.navbar-link-book:link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px solid red;
+    border-radius: 200px;
+    box-shadow: 0 0 1rem rgba(236, 118, 40, .5);
+    text-shadow: 0 .3rem 1rem rgba(255,255,255, .5);
+    transition: all .4s ease;
+}
+
+.navbar-link-book:hover{
+    background-color: red;
+    color: white;
+}
+
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+}
+
+.header-container{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+}
+
+</style>
+<section class="header">
+    <nav class="navbar">
+        <div class="navbar-box">
+            <h3 class="heading-tertiary">Sean's Pizza and burger Restaurant</h3>
+        </div>
+
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link" >Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="menu.html" class="navbar-link">Menu</a>
+            </li>
+            <li class="navbar-item">
+                <a href="about.html" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZyC_gPP5ujahSGAqW5V4lTB2OQ8SB4HIahN8i2VzqK0Uj7A/viewform?usp=sf_link" class="navbar-link">Contact</a>
+            </li>
+            <li class="navbar-item">
+                <a href="log-in.html" class="navbar-link">Log-in</a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+<section class="menu">
+    <div class="container">
+        <div class="menu-heading">Menu List</div>
+        <div class="menu-grid">
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Bacon Cheeseburger Pizza</h1>
+                    <p class="menu-p">This Bacon Cheeseburger Pizza is a family friendly dinner that everyone will love. </p>
+                    <h3 class="price">₱300</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img2">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Tripple Jumbo-Burger</h1>
+                    <p class="menu-p">You can have a flavor of your choice and only pick 1 jumbo burger these three types of jumbo burger for only 199 pesos!</p>
+                    <h3 class="price">₱199</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img3">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Cheese burger with French fries
+                    <p class="menu-p">you can have this Cheeseburger with french fries for only 100 pesos </p>
+                    <h3 class="price">₱100</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img4">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Spicy Fresh French Fries</h1>
+                    <p class="menu-p">this French Fries are so juicy and tasty with spicy you can have this for 50 pesos only!</p>
+                    <h3 class="price">₱50</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img5">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Fresh Fruit Juice</h1>
+                    <p class="menu-p">If you Drink this you will feels the fresh in your mouth, this drinks are only 40 pesos only!.</p>
+                    <h3 class="price">₱40</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img6">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title"> unli-Spicy Chicken legs</h1>
+                    <p class="menu-p">espcially we have a chicken menu this chicken legs are so delcious this is unli chicken eat all you can you can have this for only 300pesos.</p>
+                    <h3 class="price">₱300</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img7">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Hawaiian-pizza</h1>
+                    <p class="menu-p">This hawaiian-pizza is so cheesy you can have this for only 300 pesos </p>
+                    <h3 class="price">₱300</h3>
+                </div>
+            </div>
+            <div class="menu-hold">
+                <div class="menu-container">
+                    <div class="menu-img8">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title">Pepperoni-Pizza</h1>
+                    <p class="menu-p">This is our famous pizza in our menu you can have this for only 300 pesos!</p>
+                    <h3 class="price">₱300</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+</body>
+</html>
